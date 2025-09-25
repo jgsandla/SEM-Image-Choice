@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Image Matching Game")
 
-# Main image (URL instead of file)
+# Main image (URL)
 main_image_url = "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
 st.subheader("Match this image:")
 st.image(main_image_url, use_container_width=True)
@@ -16,18 +16,21 @@ options = [
 ]
 
 # Correct answer index
-correct_index = 2  # Taj Mahal in this example
+correct_index = 2  # Taj Mahal
 
 st.subheader("Choose the correct match:")
 
-# Two rows of two columns each
+# Arrange in 2x2 grid
 for row in range(2):
     cols = st.columns(2)
     for col, i in zip(cols, range(row*2, (row+1)*2)):
         with col:
-            st.image(options[i], use_container_width=True)
-            if st.button(f"Option {i+1}"):
-                st.session_state.choice = i
+            # Use a form to capture clicks uniquely
+            with st.form(f"form_{i}"):
+                st.image(options[i], use_container_width=True)
+                submitted = st.form_submit_button("")
+                if submitted:
+                    st.session_state.choice = i
 
 # Feedback
 if "choice" in st.session_state:
