@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Image Matching Game")
+st.title("SEM Image of the Day")
 
 # Main image (URL)
 main_image_url = "https://i0.wp.com/www.beanthinking.org/wp-content/uploads/2016/11/Zeiss_Flickr_CoffeeGrounds750x.jpg?ssl=1"
