@@ -56,7 +56,7 @@ for row in range(2):
                 border: 2px solid #4CAF50;
             }}
             </style>
-            <form action="" method="post">
+            <form action="" method="get">
                 <button class="img-button" type="submit" name="choice" value="{i}">
                     <img src="{options[i]['url']}">
                 </button>
@@ -65,8 +65,8 @@ for row in range(2):
             st.markdown(button_html, unsafe_allow_html=True)
             st.caption(options[i]['label'])
 
-# Capture clicks
-choice = st.experimental_get_query_params().get("choice")
+# ✅ Updated API
+choice = st.query_params.get("choice")
 if choice:
     choice = int(choice[0])
     st.session_state.choice = choice
