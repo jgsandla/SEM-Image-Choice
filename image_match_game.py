@@ -12,7 +12,7 @@ options = [
     "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg",
     "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
     "https://www.filter-elements.org/img/aluminum-foam.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
+    "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500"
 ]
 
 # Correct answer index
