@@ -4,7 +4,7 @@ st.title("SEM Image of the Day")
 
 # Main image (URL)
 main_image_url = "https://i0.wp.com/www.beanthinking.org/wp-content/uploads/2016/11/Zeiss_Flickr_CoffeeGrounds750x.jpg?ssl=1"
-st.subheader("Match this image:")
+st.subheader("What is today's mystery image?")
 st.image(main_image_url, use_container_width=True)
 
 # Four option images (URLs) with labels
