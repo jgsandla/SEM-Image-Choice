@@ -63,8 +63,11 @@ for row in range(2):
             </form>
             """
             st.markdown(button_html, unsafe_allow_html=True)
-            st.caption(options[i]['label'])
-
+            st.markdown(
+                f"<div style='text-align:center; font-size:18px; font-weight:600; color:#222;'>"
+                f"{options[i]['label']}</div>",
+                unsafe_allow_html=True
+            )
 # ✅ Updated API
 choice = st.query_params.get("choice")
 if choice:
