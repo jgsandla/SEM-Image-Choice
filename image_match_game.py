@@ -7,16 +7,28 @@ main_image_url = "https://i0.wp.com/www.beanthinking.org/wp-content/uploads/2016
 st.subheader("Match this image:")
 st.image(main_image_url, use_container_width=True)
 
-# Four option images (URLs)
+# Four option images (URLs) with labels
 options = [
-    "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg",
-    "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
-    "https://www.filter-elements.org/img/aluminum-foam.jpg",
-    "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500"
+    {
+        "url": "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg",
+        "label": "Wasp Nest"
+    },
+    {
+        "url": "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
+        "label": "Ground Coffee"
+    },
+    {
+        "url": "https://www.filter-elements.org/img/aluminum-foam.jpg",
+        "label": "Aluminum Foam"
+    },
+    {
+        "url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500",
+        "label": "Cork"
+    }
 ]
 
-# Correct answer index
-correct_index = 2  # Taj Mahal
+# Correct answer index (0-based)
+correct_index = 1  # Ground Coffee
 
 st.subheader("Choose the correct match:")
 
@@ -25,12 +37,39 @@ for row in range(2):
     cols = st.columns(2)
     for col, i in zip(cols, range(row*2, (row+1)*2)):
         with col:
-            # Use a form to capture clicks uniquely
-            with st.form(f"form_{i}"):
-                st.image(options[i], use_container_width=True)
-                submitted = st.form_submit_button("")
-                if submitted:
-                    st.session_state.choice = i
+            # Create an image-as-button using markdown
+            button_html = f"""
+            <style>
+            .img-button {{
+                border: none;
+                background: none;
+                padding: 0;
+            }}
+            .img-button img {{
+                width: 100%;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: transform 0.1s;
+            }}
+            .img-button img:hover {{
+                transform: scale(1.03);
+                border: 2px solid #4CAF50;
+            }}
+            </style>
+            <form action="" method="post">
+                <button class="img-button" type="submit" name="choice" value="{i}">
+                    <img src="{options[i]['url']}">
+                </button>
+            </form>
+            """
+            st.markdown(button_html, unsafe_allow_html=True)
+            st.caption(options[i]['label'])
+
+# Capture clicks
+choice = st.experimental_get_query_params().get("choice")
+if choice:
+    choice = int(choice[0])
+    st.session_state.choice = choice
 
 # Feedback
 if "choice" in st.session_state:
