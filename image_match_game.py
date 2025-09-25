@@ -11,7 +11,7 @@ st.image(main_image_url, use_container_width=True)
 options = [
     "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg",
     "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a8/Taj-Mahal.jpg",
+    "https://www.filter-elements.org/img/aluminum-foam.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
 ]
 
