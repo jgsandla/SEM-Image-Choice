@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Image Matching Game")
 
 # Main image (URL)
-main_image_url = "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+main_image_url = "https://i0.wp.com/www.beanthinking.org/wp-content/uploads/2016/11/Zeiss_Flickr_CoffeeGrounds750x.jpg?ssl=1"
 st.subheader("Match this image:")
 st.image(main_image_url, use_container_width=True)
 
