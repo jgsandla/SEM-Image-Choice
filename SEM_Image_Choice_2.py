@@ -26,7 +26,7 @@ image_sets = [
             {"url": "https://cdn11.bigcommerce.com/s-z9t2ne/images/stencil/600w/products/43534/409981/vision-cl-stone-upholstery-heavy-curtain-fabric__36877.1652014387.jpg?c=2", "label": "Fabric"},
             {"url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500", "label": "Cork"}
         ],
-        "correct_index": 2  # Sand
+        "correct_index": 4  # Sand
     }
 ]
 
