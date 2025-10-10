@@ -14,7 +14,7 @@ options = [
         "label": "Insect Wing"
     },
     {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lisc_lipy.jp",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lisc_lipy.jpg",
         "label": "Leaf"
     },
     {
