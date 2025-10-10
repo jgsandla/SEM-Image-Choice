@@ -28,7 +28,7 @@ options = [
 ]
 
 # Correct answer index (0-based)
-correct_index = 1  # Ground Coffee
+correct_index = 4  # Cork
 
 st.subheader("Choose the correct match:")
 
