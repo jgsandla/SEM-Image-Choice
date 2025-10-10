@@ -32,6 +32,6 @@ for row in range(2):
 # Feedback
 if "choice" in st.session_state:
     if st.session_state.choice == correct_index:
-        st.success("✅ Correct!")
+        st.success("✅ Correct! You are looking at a scanning electron microscope image of roasted and ground coffee beans.")
     else:
         st.error("❌ Try again.")
