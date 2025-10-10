@@ -77,10 +77,14 @@ if choice:
 # Feedback
 if "choice" in st.session_state:
     if st.session_state.choice == correct_index:
-        st.success(
-            '✅ Correct!',
-            icon="✅",
+        st.success("✅ Correct!", icon="✅")
+        st.markdown(
+            """
+            <a href="https://www.youtube.com/watch?v=fu3qH7xpSgE" target="_blank" style="text-decoration: none; color: #1E90FF;">
+                👉 Click here to learn more from MIT Learn
+            </a>
+            """,
+            unsafe_allow_html=True,
         )
-        st.markdown('<a href= https://www.youtube.com/watch?v=fu3qH7xpSgE>  Click here to learn more from MIT Learn  </a>', unsafe_allow_html=True)
     else:
         st.error("❌ Try again.")
