@@ -36,15 +36,16 @@ main_image_url = current["main_image"]
 options = current["options"]
 correct_index = current["correct_index"]
 
+# --- Main image ---
 st.subheader("What is today's mystery image?")
 st.image(main_image_url, use_container_width=True)
 
+# --- Choices ---
 st.subheader("Choose the correct match:")
 
-# --- Render 2x2 grid of clickable images (via query param) ---
 for row in range(2):
     cols = st.columns(2)
-    for col, i in zip(cols, range(row*2, (row+1)*2)):
+    for col, i in zip(cols, range(row * 2, (row + 1) * 2)):
         with col:
             button_html = f"""
             <style>
@@ -77,31 +78,26 @@ for row in range(2):
                 unsafe_allow_html=True
             )
 
-# --- Read selection from query params (Streamlit new/old behavior safe) ---
+# --- Read selection from query params (newer Streamlit returns a string) ---
 qp_choice = st.query_params.get("choice")
 if qp_choice is not None:
-    if isinstance(qp_choice, list):
-        qp_choice = qp_choice[0]
     try:
         st.session_state.choice = int(qp_choice)
-    except:
+    except ValueError:
         pass
-    # Clear the query param so it doesn't persist across reruns
+    # Clear so the selection doesn't persist across reruns or image sets
     st.query_params.clear()
 
-# --- Feedback for THIS image set only ---
+# --- Feedback (for the current image set only) ---
 if "choice" in st.session_state:
     if st.session_state.choice == correct_index:
         st.success("✅ Correct!")
     else:
         st.error("❌ Try again.")
 
-# --- Next image button: move from set 0 -> set 1 ---
-# (Hides itself when you're already on the second image)
+# --- Next image button: only shown on the first image set ---
 if st.session_state.image_index == 0:
     if st.button("Next image ▶️"):
         st.session_state.image_index = 1
-        # reset prior choice for the new image
-        if "choice" in st.session_state:
-            del st.session_state["choice"]
-        st.experimental_rerun()
+        st.session_state.pop("choice", None)  # reset any previous selection
+        st.rerun()
