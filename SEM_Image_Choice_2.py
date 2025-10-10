@@ -23,7 +23,7 @@ image_sets = [
         "options": [
             {"url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Salt_Crystals.jpg", "label": "Salt Crystals"},
             {"url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sugar_crystals_macro.jpg", "label": "Sugar"},
-            {"url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sand_grains_microscope.jpg", "label": "Sand"},
+            {"url": "https://cdn11.bigcommerce.com/s-z9t2ne/images/stencil/600w/products/43534/409981/vision-cl-stone-upholstery-heavy-curtain-fabric__36877.1652014387.jpg?c=2", "label": "Fabric"},
             {"url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500", "label": "Cork"}
         ],
         "correct_index": 2  # Sand
