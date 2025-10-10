@@ -14,7 +14,7 @@ image_sets = [
             {"url": "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg", "label": "Wasp Nest"},
             {"url": "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg", "label": "Ground Coffee"},
             {"url": "https://www.filter-elements.org/img/aluminum-foam.jpg", "label": "Aluminum Foam"},
-            {"url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500", "label": "Cork"}
+            {"url": "https://stonesdirect.com/cdn/shop/articles/Polished-mixed-gravel.jpg?v=1723461817&width=957", "label": "Pebbles"}
         ],
         "correct_index": 1  # Ground Coffee
     },
