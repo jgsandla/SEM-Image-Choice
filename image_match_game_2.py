@@ -3,15 +3,15 @@ import streamlit as st
 st.title("Microscope Image of the Day")
 
 # Main image (URL)
-main_image_url = "https://i0.wp.com/www.beanthinking.org/wp-content/uploads/2016/11/Zeiss_Flickr_CoffeeGrounds750x.jpg?ssl=1"
+main_image_url = "https://askabiologist.asu.edu/sites/default/files/resources/articles/buildingblocks/Hooke_Micrographia_cork_260.jpg"
 st.subheader("What is today's mystery image?")
 st.image(main_image_url, use_container_width=True)
 
 # Four option images (URLs) with labels
 options = [
     {
-        "url": "https://www.peachtreepestcontrol.com/wp-content/uploads/2023/07/Wasps-in-Comb-on-rustic-wooden-board.jpg",
-        "label": "Wasp Nest"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bumblebee%27s_wing.jpg",
+        "label": "Insect Wing"
     },
     {
         "url": "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
