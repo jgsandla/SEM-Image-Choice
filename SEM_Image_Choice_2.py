@@ -91,7 +91,7 @@ if qp_choice is not None:
 # --- Feedback (for the current image set only) ---
 if "choice" in st.session_state:
     if st.session_state.choice == correct_index:
-        st.success("✅ Correct!")
+        st.success("✅ Correct! This is a scanning electron microscope image of roasted, ground coffee beans.")
     else:
         st.error("❌ Try again.")
 
