@@ -19,7 +19,7 @@ image_sets = [
         "correct_index": 1  # Ground Coffee
     },
     {
-        "main_image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sand_under_microscope.jpg",
+        "main_image": "https://askabiologist.asu.edu/sites/default/files/resources/articles/buildingblocks/Hooke_Micrographia_cork_260.jpg",
         "options": [
             {"url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Salt_Crystals.jpg", "label": "Salt Crystals"},
             {"url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sugar_crystals_macro.jpg", "label": "Sugar"},
