@@ -14,12 +14,12 @@ options = [
         "label": "Insect Wing"
     },
     {
-        "url": "https://www.cooperscoffeeco.com/wp-content/uploads/2023/04/coffee-beans-and-ground-coffee-on-a-wooden-table-l-2022-11-15-14-35-11-utc.jpg",
-        "label": "Ground Coffee"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lisc_lipy.jp",
+        "label": "Leaf"
     },
     {
-        "url": "https://www.filter-elements.org/img/aluminum-foam.jpg",
-        "label": "Aluminum Foam"
+        "url": "https://cdn11.bigcommerce.com/s-z9t2ne/images/stencil/600w/products/43534/409981/vision-cl-stone-upholstery-heavy-curtain-fabric__36877.1652014387.jpg?c=2",
+        "label": "Fabric"
     },
     {
         "url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500",
