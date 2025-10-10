@@ -24,7 +24,7 @@ image_sets = [
             {"url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Salt_Crystals.jpg", "label": "Salt Crystals"},
             {"url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sugar_crystals_macro.jpg", "label": "Sugar"},
             {"url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sand_grains_microscope.jpg", "label": "Sand"},
-            {"url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Ice_crystals_1.jpg", "label": "Ice"}
+            {"url": "https://www.widgetco.com/cdn/shop/collections/1-1-wine-corks_be4d5471-97c5-4818-8566-d6a336b15bc0.jpg?v=1612468346&width=500", "label": "Cork"}
         ],
         "correct_index": 2  # Sand
     }
