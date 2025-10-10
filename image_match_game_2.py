@@ -28,7 +28,7 @@ options = [
 ]
 
 # Correct answer index (0-based)
-correct_index = 4  # Cork
+correct_index = 3  # Cork
 
 st.subheader("Choose the correct match:")
 
