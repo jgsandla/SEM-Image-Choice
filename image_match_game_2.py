@@ -81,6 +81,6 @@ if "choice" in st.session_state:
             '✅ Correct!',
             icon="✅",
         )
-        st.markdown('<a href= https://www.youtube.com/watch?v=fu3qH7xpSgE>  Click here to learn more from MIT Learn</a>', unsafe_allow_html=True)
+        st.markdown('<a href= https://www.youtube.com/watch?v=fu3qH7xpSgE>  Click here to learn more from MIT Learn  </a>', unsafe_allow_html=True)
     else:
         st.error("❌ Try again.")
