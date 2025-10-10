@@ -78,7 +78,7 @@ if choice:
 if "choice" in st.session_state:
     if st.session_state.choice == correct_index:
         st.success(
-            '✅ Correct! <a href="https://example.com" target="_blank">Learn more here.</a>',
+            '✅ Correct!',
             icon="✅",
         )
         st.markdown('<a href="https://example.com" target="_blank">Learn more here.</a>', unsafe_allow_html=True)
